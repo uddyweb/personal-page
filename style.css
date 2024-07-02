@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Greenlighter: hsl(148, 38%, 91%);
+    --Greenmedium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Greymedium: hsl(186, 15%, 59%);
+    --Greydarker: hsl(187, 24%, 22%);
+    --Greendarker: hsl(140, 88%, 39%);
+}
+.headline{
+    display: flex;
+    justify-content: space-between;
+}
+.currenttimeline{
+    display: flex;
+    gap: 1rem;
+    margin-left: 0.5rem;
+}
+.headline{
+    background-color: var(--Greenlighter);
+    border-top-right-radius: 2rem;
+    padding: 2rem 0;
+}
+.flex{
+    margin-top: 4rem;
+}
+#date, #time{
+    font-weight: 900;
+    background: linear-gradient(to top, rgb(255, 81, 0) 50%, rgba(0, 0, 255, 0.847) 20%, rgb(0, 126, 128) 40%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Greymedium);
+    font-family: "Open Sans", sans-serif;
+}
+.main-section{
+    background-color: white;
+    margin: 1rem 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+.goals{
+    width: 100%;
+    background-color: var(--Greydarker);
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 3rem;
+    margin: 2rem 0;
+    padding: 1rem 0.5rem;
+}
+.goals h2{
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    color: var(--Red);
+    font-weight: 900;
+}
+.uli{
+    margin: 0 2rem;
+    list-style-type: decimal-leading-zero;
+}
+.uli li{
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    color: var(--Greenlighter);
+}
+.links{
+    margin-right: 2rem;
+}
+a{
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 0 0.5rem;
+}
+a:hover{
+    color: blue;
+}
+.mid-section{
+    text-align: center;
+    background-color: #141414;
+}
+h1{
+    background: linear-gradient(to top, rgb(7, 106, 159) 10%, rgb(224, 94, 7) 30%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    padding-top: 1rem;
+}
+#para{
+    font-weight: 900;
+    background: linear-gradient(to top, orange 10%, blue 20%, green 40%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    padding-top: 2rem;
+}
+.links{
+    margin: 3rem 0;
+    font-size: 3rem;
+}
+.about-me{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 3rem 0.5rem;
+}
+.about-me h2{
+    font-weight: 900;
+    color: var(--Greenmedium);
+    margin-top: 3rem;
+}
+.about-me p{
+    color: var(--Greydarker);
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+button{
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+    border: 2px solid pink;
+    background-color: transparent;
+    font-weight: 900;
+    color: red;
+}
+button:hover{
+    background-color: thistle;
+    border: 2px solid purple;
+}
+.contact{
+    margin: 0.5rem 0.9rem;
+    font-size: 1rem;
+}
+.attribution{
+    margin: 0.6rem 6rem;
+}
+.name{
+    color: red;
+    font-weight: 900;
+    font-size: 0.5rem;
+}
+@media(max-width: 756px){
+   .about-me {
+    flex-direction: column;
+   } 
+   h1{
+    padding-top: 1rem;
+   }
+   .goals{
+    font-size: 0.6rem;
+}
+.me{
+    font-size: 0.8rem;
+}
+.img{
+    margin: 0 auto;
+}
+   .links{
+    font-size: 1rem;
+   }
+   h1{
+    font-size: 1rem;
+   }  
+}
+@media(max-width: 375px){
+    .currenttimeline{
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+   .about-me {
+    flex-direction: column;
+   } 
+   h1{
+    padding-top: 1rem;
+   }
+   .goals{
+    font-size: 0.6rem;
+}
+.me{
+    font-size: 0.8rem;
+}
+.img{
+    margin-left: 0;
+}
+   .links{
+    font-size: 1rem;
+   }
+   h1{
+    font-size: 1rem;
+   }  
+}
